@@ -9,12 +9,18 @@ img {
 .box {
   border: 1px solid black;
   background-color: rgb(1, 44, 1);
-  max-height: 200px;
+  max-height: 250px;
   box-shadow: 1px 1px 5px grey;
 }
 .leafy-green {
   font-size: 38px;
   color: green;
+}
+.logo {
+  color: green;
+}
+.green-sign {
+  padding-top: 50px;
 }
 
 li {
