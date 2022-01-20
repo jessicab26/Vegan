@@ -19,10 +19,23 @@ img {
 .logo {
   color: green;
 }
-.green-sign {
-  padding-top: 50px;
+.arrow {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
-
+.arrow:hover {
+  color: black;
+}
+button.btnbacktotop {
+  background-color: rgb(1, 44, 1);
+  border: 2px solid black;
+  position: relative;
+  right: 0;
+  left: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 li {
   color: white;
 }
