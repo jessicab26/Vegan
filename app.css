@@ -38,6 +38,7 @@ button.btnbacktotop {
 }
 li {
   color: white;
+  line-height: 1.5;
 }
 h2 {
   color: white;
@@ -45,4 +46,18 @@ h2 {
 img.profile-picture {
   border: 2px solid black;
   border-radius: 3px;
+}
+
+header.page-title {
+  background-image: url(images/garden.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  padding: 200px 0 42px;
+}
+h1.entry-title {
+  font-size: 100px;
+  color: white;
+  text-align: center;
 }
