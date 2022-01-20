@@ -36,7 +36,7 @@ button.btnbacktotop {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-li {
+ul.box-info {
   color: white;
   line-height: 1.5;
 }
@@ -55,4 +55,9 @@ header.page-title {
   background-position: center;
   position: relative;
   padding: 200px 0 42px;
+}
+h1.title {
+  font-size: 75px;
+  text-decoration: underline;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
