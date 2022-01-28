@@ -52,19 +52,11 @@
       </div>
     </nav>
     <header class="page-title"></header>
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <form id="search-recipe">
-      <input type="search" placeholder="Search a recipe..." id="change-recipe" />
-      </form>
+
+    <div>
+      <h1 class="text-center title">Vegan Recipes</h1>
     </div>
 
-    <div class="container">
-      <div>
-        <h1 class="text-center title">Vegan Recipes</h1>
-      </div>
-    </div>
     <div class="container">
       <div>
         <h4>
@@ -96,6 +88,55 @@
           <li>Maple syrup</li>
           <li>Ground flax seeds</li>
         </ol>
+      </div>
+      <div>
+        <h4>
+          Now that we have a list of our key ingredients listed, let's look into
+          some recipes...
+        </h4>
+      </div>
+      <div class="search-field">
+        <form id="search-recipe">
+          <input
+            type="search"
+            id="change-recipe"
+            placeholder="Search a recipe..."
+            class="form-control"
+          />
+          <p class="suggested-recipes">
+            Suggested recipes: "The Best Baked Beans", "Orange Cashew Salad",
+            "Grilled Tofu Kabobs", etc..
+          </p>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <h4 class="recipe-list">Recipe 1:</h4>
+          <p id="recipe-one" class="recipe-list"></p>
+          <img
+            src="https://spoonacular.com/cdn/recipeImages/jpg"
+            alt="Recipe"
+            id="main-dish"
+          />
+        </div>
+        <div class="col-4">
+          <h4 class="recipe-list">Recipe 2:</h4>
+          <p id="recipe-two" class="recipe-list"></p>
+          <img
+            src="https://spoonacular.com/cdn/recipeImages/jpg"
+            alt="Recipe"
+            id="second-dish"
+          />
+        </div>
+        <div class="col-4">
+          <h4 class="recipe-list">Recipe 3:</h4>
+          <p id="recipe-three" class="recipe-list"></p>
+          <img
+            src="https://spoonacular.com/cdn/recipeImages/jpg"
+            alt="Recipe"
+            id="third-dish"
+          />
+        </div>
       </div>
     </div>
     <footer><a href="/">Back to Homepage</a></footer>

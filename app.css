@@ -61,3 +61,20 @@ h1.title {
   text-decoration: underline;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+p.suggested-recipes {
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  opacity: 0.6;
+}
+
+.form-control {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.recipe-list {
+  text-align: center;
+}
