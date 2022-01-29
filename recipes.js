@@ -12,34 +12,39 @@ function handleSubmit(event) {
 
 function handleResponse(response) {
   console.log(response);
-  document.querySelector("#recipe-one").innerHTML =
-    response.data.results[0].title;
+}
 
-  document.querySelector("#recipe-two").innerHTML =
-    response.data.results[1].title;
-  document.querySelector("#recipe-three").innerHTML =
-    response.data.results[2].title;
-  let main = document.querySelector("#main-dish");
-  let second = document.querySelector("#second-dish");
-  let third = document.querySelector("#third-dish");
-  main.setAttribute(
-    "src",
-    `https://spoonacular.com/recipeImages/${response.data.results[0].id}-312x231.jpg`
-  );
-  main.setAttribute("alt", response.data.results[0].title);
-  main.setAttribute("title", response.data.results[0].title);
-  second.setAttribute(
-    "src",
-    `https://spoonacular.com/recipeImages/${response.data.results[1].id}-312x231.jpg`
-  );
-  second.setAttribute("alt", response.data.results[1].title);
-  second.setAttribute("title", response.data.results[1].title);
-  third.setAttribute(
-    "src",
-    `https://spoonacular.com/recipeImages/${response.data.results[2].id}-312x231.jpg`
-  );
-  third.setAttribute("alt", response.data.results[2].title);
-  third.setAttribute("title", response.data.results[2].title);
+function recipeSearch(search) {
+  let recipeNumber = "Recipe :";
+  let recipeNumbers = ["one", "two", "three", "four", "five", "six"];
+
+  return recipeNumbers[recipeNumber];
+}
+
+function displayRecipes(response) {
+  let recipeElement = document.querySelector("#recipe");
+  let recipeHTML = `<div class="row">`;
+  let recipe = response.data.results;
+  recipe.forEach(function (recipeSearch, index) {
+    if (index < 6) {
+      recipeHTML =
+        recipeHTML +
+        `<div class="col-4">
+          <h4 class="recipe-list">${formatRecipe(recipeSearch.title)}</h4>
+          <p id="recipe-one" class="recipe-list"></p>
+          <img
+            src="https://spoonacular.com/cdn/recipeImages/${
+              response.data.results[0].id
+            }-312x231.jpg"
+            alt="Recipe"
+            id="main-dish"
+          />
+        </div>`;
+    }
+  });
+
+  recipeHTML = recipeHTML + `</div>`;
+  recipeHTMl.innerHTML = recipeHTML;
 }
 
 let form = document.querySelector("#search-recipe");
